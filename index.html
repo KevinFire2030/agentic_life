@@ -210,6 +210,64 @@
       box-shadow: inset 0 1px 0 rgba(255,255,255,.35);
     }
 
+    .product-shell {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      min-width: 0;
+    }
+
+    .product-image {
+      width: 148px;
+      height: 148px;
+      object-fit: cover;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: #fff;
+      box-shadow: var(--shadow-soft);
+      flex: 0 0 auto;
+    }
+
+    .product-content {
+      min-width: 0;
+      flex: 1 1 auto;
+    }
+
+    .action-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .action-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 11px 14px;
+      border-radius: 14px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 14px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.82);
+      box-shadow: var(--shadow-soft);
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+
+    .action-link:hover { transform: translateY(-1px); }
+
+    .action-link.primary {
+      color: white;
+      background: linear-gradient(135deg, var(--accent), #7c3aed);
+      border-color: transparent;
+    }
+
+    .action-link.alt {
+      color: #0f172a;
+    }
+
     .badge.one { background: linear-gradient(135deg, #f59e0b, #f97316); }
     .badge.two { background: linear-gradient(135deg, #64748b, #475569); }
     .badge.three { background: linear-gradient(135deg, #10b981, #06b6d4); }
@@ -409,49 +467,70 @@
     <section class="ranking-list">
       <article class="ranking-card">
         <div class="badge one">1</div>
-        <div>
-          <div class="card-head">
-            <h3>아이리버 WS101 무선 키보드 마우스 세트 (블랙)</h3>
-            <span class="pill orange">최저가</span>
-            <span class="pill">풀배열</span>
+        <div class="product-shell">
+          <img class="product-image" src="https://shopping-phinf.pstatic.net/main_5735391/57353911283.20260319162018.jpg?type=f300" alt="아이리버 WS101 무선 키보드 마우스 세트 (블랙)" loading="lazy" />
+          <div class="product-content">
+            <div class="card-head">
+              <h3>아이리버 WS101 무선 키보드 마우스 세트 (블랙)</h3>
+              <span class="pill orange">최저가</span>
+              <span class="pill">풀배열</span>
+            </div>
+            <div class="price">대략 가격: 24,900원</div>
+            <ul class="clean">
+              <li><strong>특징:</strong> 풀배열, 생활방수, 키스킨, 멤브레인</li>
+              <li><strong>추천 이유:</strong> 가장 저렴한 편인데 기본기가 괜찮아서 입문용 가성비가 좋음</li>
+            </ul>
+            <div class="action-row">
+              <a class="action-link primary" href="https://cr3.shopping.naver.com/v2/bridge/searchGate?nv_mid=57353911283&cat_id=50001594&query=iriver%20%EB%AC%B4%EC%84%A0%20%ED%82%A4%EB%B3%B4%EB%93%9C%20%EB%A7%88%EC%9A%B0%EC%8A%A4%20%EC%84%B8%ED%8A%B8&t=mqn2idgx&h=3c56fa3f737448b365a582ca86a48e829986f6ec&frm=NVSCPRO" target="_blank" rel="noopener noreferrer">구매 링크</a>
+              <a class="action-link alt" href="https://shopping.naver.com/search/all?query=%EC%95%84%EC%9D%B4%EB%A6%AC%EB%B2%84%20WS101%20%EB%AC%B4%EC%84%A0%20%ED%82%A4%EB%B3%B4%EB%93%9C%20%EB%A7%88%EC%9A%B0%EC%8A%A4%20%EC%84%B8%ED%8A%B8" target="_blank" rel="noopener noreferrer">가격 비교</a>
+            </div>
           </div>
-          <div class="price">대략 가격: 24,900원</div>
-          <ul class="clean">
-            <li><strong>특징:</strong> 풀배열, 생활방수, 키스킨, 멤브레인</li>
-            <li><strong>추천 이유:</strong> 가장 저렴한 편인데 기본기가 괜찮아서 입문용 가성비가 좋음</li>
-          </ul>
         </div>
       </article>
 
       <article class="ranking-card">
         <div class="badge two">2</div>
-        <div>
-          <div class="card-head">
-            <h3>아이리버 저소음 무선 키보드 마우스 세트 (키스킨 포함)</h3>
-            <span class="pill green">균형형</span>
-            <span class="pill">키스킨 포함</span>
+        <div class="product-shell">
+          <img class="product-image" src="https://shopping-phinf.pstatic.net/main_8122299/81222991109.8.jpg?type=f300" alt="아이리버 저소음 무선 키보드 마우스 세트 (키스킨 포함)" loading="lazy" />
+          <div class="product-content">
+            <div class="card-head">
+              <h3>아이리버 저소음 무선 키보드 마우스 세트 (키스킨 포함)</h3>
+              <span class="pill green">균형형</span>
+              <span class="pill">키스킨 포함</span>
+            </div>
+            <div class="price">대략 가격: 29,900원</div>
+            <ul class="clean">
+              <li><strong>특징:</strong> 저소음, 키스킨 포함, 리뷰 수가 많음</li>
+              <li><strong>추천 이유:</strong> 가격과 만족도 균형이 좋아서 무난하게 쓰기 좋음</li>
+            </ul>
+            <div class="action-row">
+              <a class="action-link primary" href="https://cr3.shopping.naver.com/v2/bridge/searchGate?nv_mid=81222991109&cat_id=50001594&query=iriver%20%EB%AC%B4%EC%84%A0%20%ED%82%A4%EB%B3%B4%EB%93%9C%20%EB%A7%88%EC%9A%B0%EC%8A%A4%20%EC%84%B8%ED%8A%B8&t=mqn2idgz&h=201cbedc805489d1a784bf7bdf5eeaea16216045&frm=NVSCPRO" target="_blank" rel="noopener noreferrer">구매 링크</a>
+              <a class="action-link alt" href="https://shopping.naver.com/search/all?query=%EC%95%84%EC%9D%B4%EB%A6%AC%EB%B2%84%20%EC%A0%80%EC%86%8C%EC%9D%8C%20%EB%AC%B4%EC%84%A0%20%ED%82%A4%EB%B3%B4%EB%93%9C%20%EB%A7%88%EC%9A%B0%EC%8A%A4%20%EC%84%B8%ED%8A%B8" target="_blank" rel="noopener noreferrer">가격 비교</a>
+            </div>
           </div>
-          <div class="price">대략 가격: 29,900원</div>
-          <ul class="clean">
-            <li><strong>특징:</strong> 저소음, 키스킨 포함, 리뷰 수가 많음</li>
-            <li><strong>추천 이유:</strong> 가격과 만족도 균형이 좋아서 무난하게 쓰기 좋음</li>
-          </ul>
         </div>
       </article>
 
       <article class="ranking-card">
         <div class="badge three">3</div>
-        <div>
-          <div class="card-head">
-            <h3>아이리버 WS301 항균 무선 무소음 키보드 마우스 세트</h3>
-            <span class="pill">무소음</span>
-            <span class="pill green">항균</span>
+        <div class="product-shell">
+          <img class="product-image" src="https://shopping-phinf.pstatic.net/main_8989009/89890099670.jpg?type=f300" alt="아이리버 WS301 항균 무선 무소음 키보드 마우스 세트" loading="lazy" />
+          <div class="product-content">
+            <div class="card-head">
+              <h3>아이리버 WS301 항균 무선 무소음 키보드 마우스 세트</h3>
+              <span class="pill">무소음</span>
+              <span class="pill green">항균</span>
+            </div>
+            <div class="price">대략 가격: 31,900원</div>
+            <ul class="clean">
+              <li><strong>특징:</strong> 항균, 무소음, 사무실/재택용에 적합</li>
+              <li><strong>추천 이유:</strong> 조용한 환경에서 쓰기 좋고, 조금 더 투자할 가치가 있음</li>
+            </ul>
+            <div class="action-row">
+              <a class="action-link primary" href="https://cr3.shopping.naver.com/v2/bridge/searchGate?nv_mid=89890099670&cat_id=50001594&query=iriver%20%EB%AC%B4%EC%84%A0%20%ED%82%A4%EB%B3%B4%EB%93%9C%20%EB%A7%88%EC%9A%B0%EC%8A%A4%20%EC%84%B8%ED%8A%B8&t=mqn2idgx&h=f0ce54819efc97d8d618c05eff8b82fd43fc72ec&frm=NVSCPRO" target="_blank" rel="noopener noreferrer">구매 링크</a>
+              <a class="action-link alt" href="https://shopping.naver.com/search/all?query=%EC%95%84%EC%9D%B4%EB%A6%AC%EB%B2%84%20WS301%20%ED%95%AD%EA%B7%A0%20%EB%AC%B4%EC%84%A0%20%EB%AC%B4%EC%86%8C%EC%9D%8C%20%ED%82%A4%EB%B3%B4%EB%93%9C%20%EB%A7%88%EC%9A%B0%EC%8A%A4%20%EC%84%B8%ED%8A%B8" target="_blank" rel="noopener noreferrer">가격 비교</a>
+            </div>
           </div>
-          <div class="price">대략 가격: 31,900원</div>
-          <ul class="clean">
-            <li><strong>특징:</strong> 항균, 무소음, 사무실/재택용에 적합</li>
-            <li><strong>추천 이유:</strong> 조용한 환경에서 쓰기 좋고, 조금 더 투자할 가치가 있음</li>
-          </ul>
         </div>
       </article>
     </section>
