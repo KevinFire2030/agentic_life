@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light only" />
+  <title>아이리버 무선 키보드 마우스 세트 가성비 TOP 3</title>
+  <meta name="description" content="아이리버 무선 키보드 마우스 세트 가성비 추천 TOP 3를 한눈에 보기 쉽게 정리한 페이지" />
+  <style>
+    :root {
+      --bg: #f6f8fc;
+      --panel: rgba(255, 255, 255, 0.82);
+      --panel-solid: #ffffff;
+      --text: #172033;
+      --muted: #5f6b85;
+      --line: rgba(23, 32, 51, 0.1);
+      --shadow: 0 18px 45px rgba(16, 24, 40, 0.12);
+      --shadow-soft: 0 8px 24px rgba(16, 24, 40, 0.08);
+      --accent: #4f46e5;
+      --accent-2: #0ea5e9;
+      --accent-3: #22c55e;
+      --warning: #f59e0b;
+      --radius: 22px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(79, 70, 229, 0.16), transparent 35%),
+        radial-gradient(circle at top right, rgba(14, 165, 233, 0.14), transparent 34%),
+        linear-gradient(180deg, #fbfcff 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    a { color: inherit; }
+
+    .wrap {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 32px 0 56px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      background: linear-gradient(135deg, rgba(255,255,255,.92), rgba(255,255,255,.72));
+      box-shadow: var(--shadow);
+      padding: 32px;
+      margin-bottom: 22px;
+      backdrop-filter: blur(10px);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -120px -140px auto;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(79,70,229,.18), rgba(79,70,229,0) 70%);
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .02em;
+      color: #4338ca;
+      background: rgba(79, 70, 229, 0.10);
+      border: 1px solid rgba(79, 70, 229, 0.14);
+      padding: 8px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3.25rem);
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle {
+      margin: 14px 0 0;
+      max-width: 68ch;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-decoration: none;
+      padding: 12px 16px;
+      border-radius: 14px;
+      font-weight: 700;
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+      border: 1px solid transparent;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary {
+      color: white;
+      background: linear-gradient(135deg, var(--accent), #7c3aed);
+      box-shadow: 0 14px 24px rgba(79, 70, 229, .22);
+    }
+    .btn-secondary {
+      color: var(--text);
+      background: rgba(255,255,255,.7);
+      border-color: var(--line);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin: 22px 0;
+    }
+
+    .meta-card, .ranking-card, .note-card {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      box-shadow: var(--shadow-soft);
+      backdrop-filter: blur(10px);
+      border-radius: var(--radius);
+    }
+
+    .meta-card {
+      padding: 16px;
+      min-height: 96px;
+    }
+
+    .meta-card .label {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .meta-card .value {
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin: 34px 0 14px;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      font-size: 1.35rem;
+      letter-spacing: -0.02em;
+    }
+
+    .section-title p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .ranking-list {
+      display: grid;
+      gap: 16px;
+    }
+
+    .ranking-card {
+      padding: 22px;
+      display: grid;
+      grid-template-columns: 88px 1fr;
+      gap: 18px;
+      align-items: start;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 70px;
+      height: 70px;
+      border-radius: 18px;
+      font-size: 1.55rem;
+      font-weight: 900;
+      color: white;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.35);
+    }
+
+    .badge.one { background: linear-gradient(135deg, #f59e0b, #f97316); }
+    .badge.two { background: linear-gradient(135deg, #64748b, #475569); }
+    .badge.three { background: linear-gradient(135deg, #10b981, #06b6d4); }
+
+    .card-head {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .card-head h3 {
+      margin: 0;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+      background: rgba(79, 70, 229, 0.08);
+      border: 1px solid rgba(79, 70, 229, 0.12);
+      color: #4338ca;
+    }
+
+    .pill.green {
+      background: rgba(34, 197, 94, 0.10);
+      border-color: rgba(34, 197, 94, 0.14);
+      color: #166534;
+    }
+
+    .pill.orange {
+      background: rgba(245, 158, 11, 0.12);
+      border-color: rgba(245, 158, 11, 0.15);
+      color: #92400e;
+    }
+
+    ul.clean {
+      list-style: none;
+      padding: 0;
+      margin: 14px 0 0;
+      display: grid;
+      gap: 10px;
+    }
+
+    ul.clean li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      color: var(--text);
+    }
+
+    ul.clean li::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      margin-top: 9px;
+      flex: 0 0 auto;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.08);
+    }
+
+    .price {
+      font-size: 1.05rem;
+      font-weight: 900;
+      color: #111827;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .note-card {
+      padding: 18px 20px;
+    }
+
+    .note-card h4 {
+      margin: 0 0 10px;
+      font-size: 1rem;
+    }
+
+    .note-card p, .note-card li {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .note-card ul {
+      margin: 10px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    .footer {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: .92rem;
+      text-align: center;
+    }
+
+    .link-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .link-row a {
+      text-decoration: none;
+      font-weight: 700;
+      color: #1d4ed8;
+    }
+
+    .top-link {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 20;
+      padding: 12px 14px;
+      border-radius: 999px;
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(135deg, #111827, #334155);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255,255,255,.16);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    @media (max-width: 900px) {
+      .meta-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .summary { grid-template-columns: 1fr; }
+      .ranking-card { grid-template-columns: 1fr; }
+      .badge { width: 62px; height: 62px; }
+    }
+
+    @media (max-width: 640px) {
+      .wrap { width: min(100% - 20px, 1120px); padding-top: 18px; }
+      .hero, .ranking-card, .note-card { border-radius: 20px; }
+      .hero { padding: 22px; }
+      .meta-grid { grid-template-columns: 1fr; }
+      .section-title { align-items: flex-start; flex-direction: column; }
+      .top-link { right: 12px; bottom: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap" id="top">
+    <header class="hero">
+      <div class="eyebrow">🛒 가성비 추천 · 아이리버 무선 키보드 마우스 세트</div>
+      <h1>아이리버 무선 키보드 마우스 세트<br />가성비 TOP 3</h1>
+      <p class="subtitle">
+        가격, 리뷰 수, 실사용 편의성(저소음·항균·키스킨·블루투스 여부)을 기준으로
+        지금 보기 편하게 정리한 페이지입니다.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="./아이리버%20무선%20키보드%20마우스%20세트%20가성비%20TOP%203.md">원본 MD 파일 보기</a>
+        <a class="btn btn-secondary" href="#ranking">TOP 3 바로 보기</a>
+      </div>
+    </header>
+
+    <section class="meta-grid" aria-label="요약 정보">
+      <div class="meta-card">
+        <span class="label">최저가 1위</span>
+        <div class="value">WS101 블랙 · 24,900원</div>
+      </div>
+      <div class="meta-card">
+        <span class="label">실사용 밸런스</span>
+        <div class="value">저소음 + 키스킨</div>
+      </div>
+      <div class="meta-card">
+        <span class="label">조용함 우선</span>
+        <div class="value">WS301 무소음</div>
+      </div>
+      <div class="meta-card">
+        <span class="label">추천 대상</span>
+        <div class="value">사무실 · 재택 · 입문용</div>
+      </div>
+    </section>
+
+    <div class="section-title" id="ranking">
+      <div>
+        <h2>TOP 3 추천</h2>
+        <p>실제 검색 결과를 바탕으로 가성비 관점에서 추린 순위입니다.</p>
+      </div>
+    </div>
+
+    <section class="ranking-list">
+      <article class="ranking-card">
+        <div class="badge one">1</div>
+        <div>
+          <div class="card-head">
+            <h3>아이리버 WS101 무선 키보드 마우스 세트 (블랙)</h3>
+            <span class="pill orange">최저가</span>
+            <span class="pill">풀배열</span>
+          </div>
+          <div class="price">대략 가격: 24,900원</div>
+          <ul class="clean">
+            <li><strong>특징:</strong> 풀배열, 생활방수, 키스킨, 멤브레인</li>
+            <li><strong>추천 이유:</strong> 가장 저렴한 편인데 기본기가 괜찮아서 입문용 가성비가 좋음</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="ranking-card">
+        <div class="badge two">2</div>
+        <div>
+          <div class="card-head">
+            <h3>아이리버 저소음 무선 키보드 마우스 세트 (키스킨 포함)</h3>
+            <span class="pill green">균형형</span>
+            <span class="pill">키스킨 포함</span>
+          </div>
+          <div class="price">대략 가격: 29,900원</div>
+          <ul class="clean">
+            <li><strong>특징:</strong> 저소음, 키스킨 포함, 리뷰 수가 많음</li>
+            <li><strong>추천 이유:</strong> 가격과 만족도 균형이 좋아서 무난하게 쓰기 좋음</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="ranking-card">
+        <div class="badge three">3</div>
+        <div>
+          <div class="card-head">
+            <h3>아이리버 WS301 항균 무선 무소음 키보드 마우스 세트</h3>
+            <span class="pill">무소음</span>
+            <span class="pill green">항균</span>
+          </div>
+          <div class="price">대략 가격: 31,900원</div>
+          <ul class="clean">
+            <li><strong>특징:</strong> 항균, 무소음, 사무실/재택용에 적합</li>
+            <li><strong>추천 이유:</strong> 조용한 환경에서 쓰기 좋고, 조금 더 투자할 가치가 있음</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section class="summary">
+      <div class="note-card">
+        <h4>한 줄 결론</h4>
+        <ul>
+          <li><strong>최저가 우선:</strong> WS101 블랙</li>
+          <li><strong>무난한 실사용:</strong> 저소음 무선 키보드 마우스 세트(키스킨 포함)</li>
+          <li><strong>조용함 최우선:</strong> WS301</li>
+        </ul>
+      </div>
+      <div class="note-card">
+        <h4>참고</h4>
+        <p>
+          가격과 상품명은 네이버 검색 결과와 다나와/쇼핑 검색 결과를 기준으로 정리했습니다.
+          실제 구매 전에는 배송비, 쿠폰, 판매처 평점도 함께 확인해 보세요.
+        </p>
+        <div class="link-row">
+          <a href="./아이리버%20무선%20키보드%20마우스%20세트%20가성비%20TOP%203.md">원본 문서</a>
+          <a href="https://kevinfire2030.github.io/agentic_life/">현재 페이지</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">© 2026 · GitHub Pages로 배포된 정리 페이지</div>
+  </div>
+
+  <a class="top-link" href="#top">↑ TOP</a>
+</body>
+</html>
